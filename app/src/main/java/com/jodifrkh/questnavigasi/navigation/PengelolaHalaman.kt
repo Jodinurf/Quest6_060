@@ -12,6 +12,7 @@ import androidx.navigation.compose.rememberNavController
 import com.jodifrkh.questnavigasi.ui.view.screen.MahasiswaFormView
 import com.jodifrkh.questnavigasi.ui.view.screen.RencanaStudyView
 import com.jodifrkh.questnavigasi.ui.view.screen.SplashView
+import com.jodifrkh.questnavigasi.ui.view.screen.TampilHasilView
 import com.jodifrkh.questnavigasi.ui.view.viewModel.MahasiswaViewModel
 import com.jodifrkh.questnavigasi.ui.view.viewModel.RencanaStudyViewModel
 
@@ -63,6 +64,17 @@ fun MahasiswaApp(
                     navController.navigate(Halaman.Tampil.name)
                 },
                 onBackButtonClicked = { navController.popBackStack() }
+            )
+        }
+        composable(route = Halaman.Tampil.name) {
+            TampilHasilView(
+                mahasiswa = mahasiswaUiState,
+                rencanaStudi = krsUiState,
+                onBackButtonClicked = {
+                    navController.navigate(Halaman.Splash.name) {
+                        popUpTo(0) { inclusive = true }
+                    }
+                }
             )
         }
     }
