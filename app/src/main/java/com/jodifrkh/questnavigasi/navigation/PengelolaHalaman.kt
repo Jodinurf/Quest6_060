@@ -32,4 +32,9 @@ fun MahasiswaApp(
     val mahasiswaUiState = mahasiswaViewModel.mahasiswaUiState.collectAsState().value
     val krsUiState = krsViewModel.krsStateUi.collectAsState().value
 
+    NavHost(
+        navController = navController,
+        startDestination = Halaman.Splash.name,
+        modifier = Modifier.padding()
+    ) { }
 }
