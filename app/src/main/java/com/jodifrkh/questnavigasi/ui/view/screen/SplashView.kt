@@ -22,5 +22,16 @@ import com.jodifrkh.questnavigasi.R
 fun SplashView(
     onMulaiButton: () -> Unit
 ){
+    Column (modifier = Modifier
+        .fillMaxSize()
+        .background(
+            color = colorResource(
+                R.color.primary
+            )
+        ),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
 
+    }
 }
