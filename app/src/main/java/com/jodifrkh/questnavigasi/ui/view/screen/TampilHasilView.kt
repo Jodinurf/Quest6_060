@@ -107,6 +107,15 @@ fun TampilHasilView(
                     fontSize = 14.sp
                 )
                 Spacer(modifier = Modifier.padding(8.dp))
+                TemplatesHasil(judulParam = "Nama" , isiParam = mahasiswa.nama)
+                Spacer(modifier = Modifier.padding(4.dp))
+                TemplatesHasil(judulParam = "NIM" , isiParam = mahasiswa.nim)
+                Spacer(modifier = Modifier.padding(4.dp))
+                TemplatesHasil(judulParam = "Email" , isiParam = mahasiswa.email)
+                Spacer(modifier = Modifier.padding(4.dp))
+                TemplatesHasil(judulParam = "Matakuliah" , isiParam = rencanaStudi.mataKuliah)
+                Spacer(modifier = Modifier.padding(4.dp))
+                TemplatesHasil(judulParam = "Kelas" , isiParam = rencanaStudi.kelas)
                 Spacer(modifier = Modifier.padding(16.dp))
                 Row(
                     modifier = Modifier.fillMaxWidth(),
