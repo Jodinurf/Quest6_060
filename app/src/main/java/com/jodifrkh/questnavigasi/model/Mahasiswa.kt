@@ -1,4 +1,7 @@
 package com.jodifrkh.questnavigasi.model
 
-class Mahasiswa {
-}
+data class Mahasiswa (
+    val nim: String = "",
+    val nama: String = "",
+    val email: String = ""
+)
