@@ -1,4 +1,6 @@
 package com.jodifrkh.questnavigasi.model
 
-class RencanaStudi {
-}
+data class RencanaStudi (
+    val mataKuliah: String = "",
+    val kelas: String = ""
+)
